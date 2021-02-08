@@ -1,0 +1,30 @@
+cabal-version: 3.0
+name:          twilight-tarot
+version:       1.0.0
+synopsis:      After Sundown Tarot card generation.
+description:   Generate Tarot spreads for After Sundown.
+homepage:      https://github.org/kozross/twilight
+license:       Apache-2.0
+license-file:  LICENSE.md
+author:        Koz Ross
+maintainer:    koz.ross@retro-freedom.nz
+bug-reports:   https://github.org/kozross/twilight/issues
+copyright:     (C) Koz Ross 2021
+category:      Text
+tested-with:   GHC ==8.10.3
+build-type:    Simple
+
+library
+  exposed-modules:  Twilight.Tarot
+  build-depends:
+    , base                  ==4.14.1.0
+    , random                ^>=1.2.0
+    , unordered-containers  ^>=0.2.13.0
+    , vector                ^>=0.12.2.0
+
+  ghc-options:
+    -Wall -Wcompat -Wincomplete-record-updates
+    -Wincomplete-uni-patterns -Wredundant-constraints -Werror
+
+  hs-source-dirs:   src
+  default-language: Haskell2010

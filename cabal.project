@@ -1,1 +1,4 @@
-packages: twilight-die/twilight-die.cabal
+packages: 
+  twilight-die/twilight-die.cabal
+  twilight-tarot/twilight-tarot.cabal
+  twilight-bot/twilight-bot.cabal
